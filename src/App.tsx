@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Input from "./components/Input";
 // import Greet from "./components/Greet";
 // import Person from "./components/Person";
@@ -28,7 +29,7 @@ function App() {
     },
   ];
 
-  const [inputValue, setInputValue] = useState('')
+  const [inputValue, setInputValue] = useState("");
 
   return (
     <div className="text-2xl flex flex-col items-center">
@@ -36,8 +37,9 @@ function App() {
       <Person name={person} />
       <PersonList names={personList} />
       <Status status="error" /> */}
-      <Input value={inputValue} handleChange={e => setInputValue(e.target.value)} />
-      <Button handleClick={(e, id) => console.log("Hellow " + id + e.target)} />
+      {/* <Input value={inputValue} handleChange={e => setInputValue(e.target.value)} />
+      <Button handleClick={(e, id) => console.log("Hellow " + id + e.target)} /> */}
+      <Container styles={{ padding: "6rem" }} />
     </div>
   );
 }
