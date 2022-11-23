@@ -1,15 +1,14 @@
+import { Name } from "./Person.types";
+
 type personListProps = {
-  names: {
-    firstName: string;
-    lastName: string;
-  }[];
+  names: Name[];
 };
 
-const PersonList = (props: personListProps) => {
+const PersonList = ({ names }: personListProps) => {
   return (
     <div>
-      {props.names.map(name => (
-        <p>
+      {names.map((name, i) => (
+        <p key={i}>
           {name.firstName} {name.lastName}
         </p>
       ))}
