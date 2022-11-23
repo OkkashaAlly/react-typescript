@@ -1,6 +1,6 @@
 type propType = {
   name: string;
-  messageCount: number;
+  messageCount?: number;
   isLoggedIn: boolean;
 };
 
