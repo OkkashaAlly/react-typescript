@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import { Container } from "./components/Container";
 import Greet from "./components/Greet";
 import { Input } from "./components/Input";
 import Person from "./components/Person";
@@ -32,8 +33,9 @@ function App() {
       <Person name={person} />
       <PersonList names={personList} /> */}
       {/* <Status status="loading" /> */}
-      <Button handleClick={(_, id) => console.log("Clicked", id)} />
-      <Input value="Okkasha" />
+      {/* <Button handleClick={(_, id) => console.log("Clicked", id)} />
+      <Input value="Okkasha" /> */}
+      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
     </div>
   );
 }
