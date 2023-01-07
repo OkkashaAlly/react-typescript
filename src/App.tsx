@@ -2,6 +2,7 @@ import Button from "./components/Button";
 import { Container } from "./components/Container";
 import Greet from "./components/Greet";
 import { Input } from "./components/Input";
+import LoggedIn from "./components/LoggedIn";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
@@ -35,7 +36,8 @@ function App() {
       {/* <Status status="loading" /> */}
       {/* <Button handleClick={(_, id) => console.log("Clicked", id)} />
       <Input value="Okkasha" /> */}
-      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+      {/* <Container styles={{ border: "1px solid black", padding: "1rem" }} /> */}
+      <LoggedIn />
     </div>
   );
 }
