@@ -1,5 +1,6 @@
 import Button from "./components/Button";
 import Greet from "./components/Greet";
+import { Input } from "./components/Input";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
@@ -32,6 +33,7 @@ function App() {
       <PersonList names={personList} /> */}
       {/* <Status status="loading" /> */}
       <Button handleClick={(_, id) => console.log("Clicked", id)} />
+      <Input value="Okkasha" />
     </div>
   );
 }
