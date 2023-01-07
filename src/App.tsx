@@ -2,10 +2,11 @@ import Button from "./components/Button";
 import { Container } from "./components/Container";
 import Greet from "./components/Greet";
 import { Input } from "./components/Input";
-import LoggedIn from "./components/LoggedIn";
+import LoggedIn from "./components/state/LoggedIn";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
+import User from "./components/state/User";
 
 function App() {
   const person = {
@@ -38,6 +39,7 @@ function App() {
       <Input value="Okkasha" /> */}
       {/* <Container styles={{ border: "1px solid black", padding: "1rem" }} /> */}
       <LoggedIn />
+      <User />
     </div>
   );
 }
