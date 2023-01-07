@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import Greet from "./components/Greet";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
@@ -29,7 +30,8 @@ function App() {
       {/* <Greet name={"Okkasha"} isLoggedIn={false} />
       <Person name={person} />
       <PersonList names={personList} /> */}
-      <Status status="loading" />
+      {/* <Status status="loading" /> */}
+      <Button handleClick={(_, id) => console.log("Clicked", id)} />
     </div>
   );
 }
