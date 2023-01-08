@@ -1,6 +1,6 @@
 import Button from "./components/html/Button";
 import Toast from "./components/templateliterals/Toast";
-
+  
 function App() {
   const person = {
     firstName: "Okkasha",
