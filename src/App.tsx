@@ -14,6 +14,7 @@ import { UserContextProvider } from "./components/context/UserContext";
 import Profile from "./components/auth/Profile";
 import Private from "./components/auth/Private";
 import List from "./components/generics/List";
+import RandomNumber from "./components/restrict/RandomNumber";
 
 function App() {
   const person = {
@@ -63,9 +64,10 @@ function App() {
         <User />
       </UserContextProvider> */}
       {/* <Profile isLoggedIn={true} component={Private} /> */}
-      <List items={stingItems} handleClick={item => console.log(item)} />
-      <List items={numberItems} handleClick={item => console.log(item)} />
+      {/* <List items={stingItems} handleClick={item => console.log(item)} />
+      <List items={numberItems} handleClick={item => console.log(item)} /> */}
       {/* <List items={objItems} handleClick={item => console.log(typeof item)} /> */}
+      <RandomNumber value={10} isNegative/>
     </div>
   );
 }
