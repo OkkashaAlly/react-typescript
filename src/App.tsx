@@ -11,8 +11,9 @@ import Counter from "./components/state/Counter";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import Box from "./components/context/Box";
 import { UserContextProvider } from "./components/context/UserContext";
-import Profile from "./components/Auth/Profile";
-import Private from "./components/Auth/Private";
+import Profile from "./components/auth/Profile";
+import Private from "./components/auth/Private";
+import List from "./components/generics/List";
 
 function App() {
   const person = {
@@ -35,6 +36,14 @@ function App() {
     },
   ];
 
+  const stingItems = ["Okkasha", "Omar", "Nabil"];
+  const numberItems = [1, 2, 3];
+  const objItems = [
+    { id: 1, name: "Okkasha" },
+    { id: 2, name: "Omar" },
+    { id: 3, name: "Nabil" },
+  ];
+
   return (
     <div className="text-2xl flex flex-col items-center">
       {/* <Greet name={"Okkasha"} isLoggedIn={false} />
@@ -53,7 +62,10 @@ function App() {
       {/* <UserContextProvider>
         <User />
       </UserContextProvider> */}
-      <Profile isLoggedIn={true} component={Private} />
+      {/* <Profile isLoggedIn={true} component={Private} /> */}
+      <List items={stingItems} handleClick={item => console.log(item)} />
+      <List items={numberItems} handleClick={item => console.log(item)} />
+      {/* <List items={objItems} handleClick={item => console.log(typeof item)} /> */}
     </div>
   );
 }
