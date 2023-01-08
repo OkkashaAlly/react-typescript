@@ -8,6 +8,8 @@ import PersonList from "./components/PersonList";
 import Status from "./components/Status";
 import User from "./components/state/User";
 import Counter from "./components/state/Counter";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
+import Box from "./components/context/Box";
 
 function App() {
   const person = {
@@ -41,7 +43,10 @@ function App() {
       {/* <Container styles={{ border: "1px solid black", padding: "1rem" }} /> */}
       {/* <LoggedIn />
       <User /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider>
     </div>
   );
 }
