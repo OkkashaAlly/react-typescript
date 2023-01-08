@@ -15,6 +15,7 @@ import Profile from "./components/auth/Profile";
 import Private from "./components/auth/Private";
 import List from "./components/generics/List";
 import RandomNumber from "./components/restrict/RandomNumber";
+import Toast from "./components/templateliterals/Toast";
 
 function App() {
   const person = {
@@ -67,7 +68,8 @@ function App() {
       {/* <List items={stingItems} handleClick={item => console.log(item)} />
       <List items={numberItems} handleClick={item => console.log(item)} /> */}
       {/* <List items={objItems} handleClick={item => console.log(typeof item)} /> */}
-      <RandomNumber value={10} isNegative/>
+      {/* <RandomNumber value={10} isNegative/> */}
+      <Toast position={"center"}/>
     </div>
   );
 }
